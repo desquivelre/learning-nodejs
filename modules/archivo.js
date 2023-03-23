@@ -1,11 +1,11 @@
 const fs = require('fs');
 
 function leerArchivo(nombreArchivo) {
-    fs.readFile(nombreArchivo, 'utf-8', (err, contenido) => {
+    fs.readFile(nombreArchivo, 'utf-8', (err, data) => {
         if (err) {
             throw err;
         }
-        console.log(contenido);
+        console.log(data);
     });
 }
 
