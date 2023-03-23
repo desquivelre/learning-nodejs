@@ -1,6 +1,8 @@
 const saludos = require("./modules/saludos.js");
 const operaciones = require("./modules/operaciones.js");
-const archivo = require('./modules/archivo.js');
+const archivoAsincronas = require("./modules/archivoAsincronas.js");
+const archivoSincronas = require("./modules/archivoSincronas.js");
+
 
 const os = require("os");
 const fs = require("fs");
@@ -8,8 +10,9 @@ const fs = require("fs");
 module.exports = {
     saludos:saludos,
     operaciones:operaciones,
-    archivo:archivo,
-    
+    archivoAsincronas:archivoAsincronas,
+    archivoSincronas:archivoSincronas,
+
     os:os,
     fs:fs
 }
