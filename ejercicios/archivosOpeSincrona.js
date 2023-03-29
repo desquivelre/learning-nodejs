@@ -1,6 +1,6 @@
-const modules = require('../modules.js');
-
 // ARCHIVOS EJERCICIOS (funciones síncronas)
+
+const modules = require('../modules.js');
 
 console.log(modules.archivoSincronas.leerArchivo('./index.html'));
 modules.archivoSincronas.renombrarArchivo('./index.html', './main.html');

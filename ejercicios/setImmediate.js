@@ -1,6 +1,6 @@
-const modules = require('../modules.js')
-
 // SETIMMEDIATE EJERCICIO
+
+const modules = require('../modules.js')
 
 console.log('Antes de setImmediate()');
 setImmediate(modules.saludos.imprimirSaludo, "Diego");
