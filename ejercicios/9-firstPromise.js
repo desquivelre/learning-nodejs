@@ -1,4 +1,6 @@
-const validatePromise = false;
+//  My first promise in javascript
+
+const validatePromise = true;
 
 const firstPromise = new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -10,9 +12,12 @@ const firstPromise = new Promise((resolve, reject) => {
     }, 3000);
 });
 
-firstPromise.then((valor) => {
+const successfulPromise = (valor) => {
     console.log(valor);
-}, (razonRechazo) => {
-    console.log(razonRechazo);
-});
+}; 
 
+const rejectedPromise = (razonRechazo) => {
+    console.log(razonRechazo);
+};
+
+firstPromise.then(successfulPromise, rejectedPromise);
